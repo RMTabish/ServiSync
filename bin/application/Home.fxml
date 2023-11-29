@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#255480" height="84.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="789.0" />
+      <Text fill="WHITE" layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ServiSync" wrappingWidth="158.13671875">
+         <font>
+            <Font name="MV Boli" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="524.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Button" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="557.0" layoutX="-19.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="828.0" />
+      <Button layoutX="14.0" layoutY="140.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Log Service Request">
+         <font>
+            <Font name="Constantia Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="305.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Collabrate on Request">
+         <font>
+            <Font name="Constantia Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="217.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Track Service Request">
+         <font>
+            <Font name="Constantia Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField layoutX="357.0" layoutY="166.0" prefHeight="26.0" prefWidth="213.0" />
+      <TextField layoutX="373.0" layoutY="236.0" prefHeight="26.0" prefWidth="191.0" />
+      <Text layoutX="293.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="281.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department: " />
+   </children>
+</AnchorPane>

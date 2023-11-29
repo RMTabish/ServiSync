@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#255480" height="111.0" stroke="BLACK" strokeType="INSIDE" width="764.0" />
+      <Text fill="WHITE" layoutX="22.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track Service Request">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Service Request ID">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField id="TRid" layoutX="342.0" layoutY="165.0" />
+      <Text layoutX="70.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField id="sts" editable="false" layoutX="134.0" layoutY="302.0" />
+      <Text layoutX="70.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField id="typ" editable="false" layoutX="130.0" layoutY="387.0" />
+      <Text layoutX="334.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextArea id="desc" editable="false" layoutX="469.0" layoutY="280.0" prefHeight="59.0" prefWidth="217.0" />
+      <Text layoutX="320.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Dept:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField id="dept" editable="false" layoutX="486.0" layoutY="387.0" />
+   </children>
+</AnchorPane>
