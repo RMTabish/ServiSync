@@ -12,7 +12,7 @@
 <AnchorPane prefHeight="474.0" prefWidth="755.0" style="-fx-background-color: eeee;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b0a36" height="102.0" layoutY="-6.0" stroke="#1d0741" strokeType="INSIDE" width="755.0" />
-      <TextField id="user_id" fx:id="admin_id" layoutX="284.0" layoutY="294.0" prefHeight="20.0" prefWidth="149.0" promptText="enter id" />
+      <TextField id="user_id" fx:id="admin_id" layoutX="284.0" layoutY="294.0" prefHeight="20.0" prefWidth="149.0" promptText="enter name" />
       <Text layoutX="205.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -23,14 +23,14 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text fill="#fefefe" layoutX="133.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER LOGIN" textAlignment="CENTER" wrappingWidth="450.42138671875">
+      <Text fill="#fefefe" layoutX="133.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="450.42138671875">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Button id="login_button" fx:id="register_button2" layoutX="300.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #0b0a36;" text="Login" textFill="WHITE">
+      <Button id="login_button" fx:id="register_button2" layoutX="244.0" layoutY="384.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #0b0a36;" text="Login User" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
       <TextField id="user_pass" fx:id="admin_password" layoutX="284.0" layoutY="337.0" promptText="enter password" />
@@ -39,5 +39,10 @@
             <Image url="@logoS.png" />
          </image>
       </ImageView>
+      <Button id="login_button" fx:id="register_button21" layoutX="244.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleAdminLoginButtonAction" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #0b0a36;" text="Login Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

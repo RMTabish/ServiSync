@@ -27,6 +27,11 @@
          </font>
       </Text>
       <ChoiceBox fx:id="departmentChoiceBox" layoutX="323.0" layoutY="259.0" prefWidth="150.0" />
-      <Button layoutX="264.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #356da1;" text="Assign" textFill="WHITE" onAction="#assignServiceRequest" />
+      <Button layoutX="264.0" layoutY="345.0" mnemonicParsing="false" onAction="#assignServiceRequest" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #356da1;" text="Assign" textFill="WHITE" />
+      <Button layoutX="264.0" layoutY="380.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #356da1;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

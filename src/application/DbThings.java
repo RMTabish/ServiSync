@@ -4,11 +4,20 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -53,4 +62,20 @@ static	Connection connection;
 	            return false;
 	        }
 	    }
+	 
+	 public static boolean authenticateAdmin(String username, String password) {
+		    try (Connection connection = connect_to_mysql()) {
+		        String sql = "SELECT * FROM Administrator WHERE userName = ? AND password = ?";
+		        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+		        preparedStatement.setString(1, username);
+		        preparedStatement.setString(2, password);
+
+		        ResultSet resultSet = preparedStatement.executeQuery();
+		        return resultSet.next(); // If a row is found, the admin is authenticated.
+		    } catch (SQLException e) {
+		        e.printStackTrace();
+		        return false; // Handle any database errors or exceptions.
+		    }
+		}
+
 }

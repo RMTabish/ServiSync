@@ -27,5 +27,10 @@
              </font>
          </Button>
          <TextField fx:id="employeeIdField" layoutX="245.0" layoutY="152.0" promptText="Employee ID" />
+      <Button layoutX="252.0" layoutY="249.0" maxWidth="Infinity" onAction="#back" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #40739e;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

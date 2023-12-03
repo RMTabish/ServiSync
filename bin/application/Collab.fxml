@@ -29,7 +29,7 @@
          </font>
       </Text>
       <TextArea fx:id="cnote" layoutX="260.0" layoutY="249.0" prefHeight="72.0" prefWidth="209.0" promptText="Enter Collabration Note here" />
-      <Button fx:id="clb" layoutX="290.0" layoutY="374.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="209.0" text="Collaborate" onAction="#onCollaborateButtonClick">
+      <Button fx:id="clb" layoutX="290.0" layoutY="374.0" mnemonicParsing="false" onAction="#onCollaborateButtonClick" prefHeight="47.0" prefWidth="209.0" text="Collaborate">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -40,5 +40,6 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
+      <Button layoutX="609.0" layoutY="444.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #406e9a;" text="Back" onAction="#loadHomePage" textFill="WHITE" />
    </children>
 </AnchorPane>

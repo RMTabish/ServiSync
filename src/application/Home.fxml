@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homeController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#255480" height="84.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="789.0" />
-      <Text fill="WHITE" layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ServiSync" wrappingWidth="158.13671875">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#255480" height="122.0" stroke="BLACK" strokeType="INSIDE" width="789.0" />
+      <Text fill="WHITE" layoutX="27.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER HOME" wrappingWidth="443.0">
          <font>
-            <Font name="MV Boli" size="30.0" />
+            <Font name="Arial Bold" size="52.0" />
          </font>
       </Text>
-      <Button layoutX="524.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Button" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="557.0" layoutX="-19.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="828.0" />
-      <Button layoutX="14.0" layoutY="140.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Log Service Request">
+      <Button layoutX="27.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleLogServiceRequestButtonAction" prefHeight="72.0" prefWidth="241.0" style="-fx-background-color: #255480;" text="Log Service Request" textFill="WHITE">
          <font>
-            <Font name="Constantia Bold" size="12.0" />
+            <Font name="Constantia Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="305.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Collabrate on Request">
+      <Button layoutX="27.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleCollaborateOnRequestButtonAction" prefHeight="72.0" prefWidth="241.0" style="-fx-background-color: #255480;" text="Collabrate on Request" textFill="WHITE">
          <font>
-            <Font name="Constantia Bold" size="12.0" />
+            <Font name="Constantia Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="217.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Track Service Request">
+      <Button layoutX="27.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleTrackServiceRequestButtonAction" prefHeight="72.0" prefWidth="241.0" style="-fx-background-color: #255480;" text="Track Service Request" textFill="WHITE">
          <font>
-            <Font name="Constantia Bold" size="12.0" />
+            <Font name="Constantia Bold" size="20.0" />
          </font>
       </Button>
-      <TextField layoutX="357.0" layoutY="166.0" prefHeight="26.0" prefWidth="213.0" />
-      <TextField layoutX="373.0" layoutY="236.0" prefHeight="26.0" prefWidth="191.0" />
-      <Text layoutX="293.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
-      <Text layoutX="281.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department: " />
+      <Button layoutX="27.0" layoutY="489.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="241.0" style="-fx-background-color: #255480;" onAction="#handleLogOutButtonAction" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="257.0" layoutX="477.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoS.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

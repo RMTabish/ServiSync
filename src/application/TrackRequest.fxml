@@ -46,6 +46,7 @@
          </font>
       </Text>
       <TextField fx:id="dept" editable="false" layoutX="502.0" layoutY="387.0" />
-      <Button layoutX="536.0" layoutY="166.0" mnemonicParsing="false" onAction="#retrieveData" text="Find" />
+      <Button layoutX="536.0" layoutY="166.0" mnemonicParsing="false" onAction="#retrieveData" style="-fx-background-color: #255480;" text="Find" textFill="WHITE" />
+      <Button layoutX="629.0" layoutY="465.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #255480;" onAction="#back" text="Back" />
    </children>
 </AnchorPane>
